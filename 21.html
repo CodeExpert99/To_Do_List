@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To_Do List</title>
+    <link rel="stylesheet" href="test.css" />
+    <link rel="stylesheet" href="21.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="boxdivs" id="box1"></div>
+      <nav>
+        <ul>
+          <li><a id="all" href="#">All Todo's</a></li>
+        </ul>
+      </nav>
+      <div class="boxdivs" id="box2"></div>
+    </div>
+    <div id="divsidebar">
+      <h1 id="main_heading">All Todo's</h1>
+      <div id="Add_new">
+        <img id="add_new_img" src="img-1.png" />
+        <h2 id="txt_add_new">Add New</h2>
+      </div>
+    </div>
+    <div id="tasks">
+      
+    </div>
+    <footer>
+      <div class="boxdivs" id="box3"></div>
+      <div class="boxdivs" id="box4"></div>
+    </footer>
+    <div class="pop_up" id="popadd">
+      <div class="pophead">
+        <h2>New</h2>
+        <h3 id="close">X</h3>
+      </div>
+      <img src="3.jpeg" alt="" id="toimage" />
+      <h3 class="addheads">Task:</h3>
+      <input
+        class="fields"
+        id="taskinput"
+        type="text"
+        value=""
+        placeholder="Add new Task"
+      />
+      <h3 class="addheads">Target Time:</h3>
+      <button class="fields" id="openPicker">Pick Target Time</button>
+      <input
+        class="fields"
+        type="text"
+        name="ttime"
+        id="trgtime"
+        placeholder="Your Picked Time will Appear Here!"
+        value=""
+        readonly
+      />
+      <div class="finalbtns">
+        <input type="submit" id="addtask" value="Add" class="lastbtns" />
+        <input type="submit" id="cancel" value="Cancel" class="lastbtns" />
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="time picker.js"></script>
+    <script src="33.js"></script>
+  </body>
+</html>
