@@ -9,9 +9,11 @@ let tasks = document.getElementById("tasks");
 add_new_div.onclick = divclick = () => {
   pop_id.classList.toggle("pop_up_make_visible");
 };
-closepop.onclick = () => {
+
+const fun1 = () => {
   pop_id.classList.toggle("pop_up_make_visible");
 };
+closepop.onclick = fun1;
 cancelbtn.onclick = () => {
   pop_id.classList.toggle("pop_up_make_visible");
 };
@@ -27,6 +29,8 @@ addbtn.onclick = () => {
   a++;
   document.getElementById("taskinput").value = "";
   document.getElementById("trgtime").value = "";
+  loading_tasks();
+  fun1();
 };
 
 const loading_tasks = () => {
