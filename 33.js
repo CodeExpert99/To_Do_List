@@ -31,6 +31,7 @@ addbtn.onclick = () => {
   document.getElementById("trgtime").value = "";
   loading_tasks();
   fun1();
+  //this is changing commment
 };
 
 const loading_tasks = () => {
